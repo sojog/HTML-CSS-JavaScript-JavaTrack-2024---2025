@@ -1,0 +1,21 @@
+div{
+    background-color: beige;
+    padding: 20px;
+
+    margin-top:  100px;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+
+    border-color: black; 
+    border-style:dotted;
+    border-width: 1px;
+}
+
+
+b {
+    color:blue;
+}
+span:nth-of-type(even){
+    background-color: aquamarine;
+}

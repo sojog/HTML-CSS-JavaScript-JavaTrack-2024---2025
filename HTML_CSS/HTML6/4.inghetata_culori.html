@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        #inghetata{
+            height: 50%;
+            width: 200px;
+            border-top-left-radius:100px;
+            border-top-right-radius:100px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            overflow: hidden;   
+            background-color: aqua;
+           
+        }
+        #bat {
+            height: 25%;
+            width: 40px;
+            background-color: saddlebrown;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        @keyframes culori {
+            0% {
+                background-color: chocolate;
+            }
+            25%{
+                background-color:bisque;
+            }
+            50% {
+                background-color: lime;
+            }
+            75%{
+                background-color: orangered;
+            }
+            100%{
+                background-color: chocolate;
+            }
+        }
+        @keyframes culori2 {
+            0% {
+                background-color:bisque;
+            }
+            25%{
+                background-color: lime;
+            }
+            50% {
+                background-color: orangered;
+            }
+            75%{
+                background-color: chocolate;
+            }
+            100%{
+                background-color:bisque;
+            }
+        }
+
+        @keyframes culori3 {
+            0% {
+                background-color: lime;
+            }
+            25%{
+                background-color: orangered;
+            }
+            50% {
+                background-color: chocolate;
+            }
+            75%{
+                background-color:bisque;
+            }
+            100%{
+                background-color: lime;
+            }
+        }
+
+
+        @keyframes culori4 {
+            0% {
+                background-color: orangered;
+            }
+            25%{
+                background-color: chocolate;
+            }
+            50% {
+                background-color:bisque;
+            }
+            75%{
+                background-color: lime;
+            }
+            100%{
+                background-color: orangered;
+            }
+        }
+
+        .aroma{
+            height: 25%;
+            width: 200%;
+            background-color: chocolate;
+            transform: translate(-70px, 0px) rotate(10deg) ; 
+            transition-duration: 1s;
+            
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        .aroma:nth-child(1){
+            animation-name: culori;
+        }
+        .aroma:nth-child(2){
+            background-color:bisque;
+            animation-name: culori2;
+        }
+        .aroma:nth-child(3){
+            background-color: lime;
+            animation-name: culori3;
+        }
+        .aroma:nth-child(4){
+            background-color: orangered;
+            animation-name: culori4;
+        }
+    
+
+    </style>
+</head>
+<body>
+
+    <div id="inghetata">
+        <div class="aroma"></div>
+        <div class="aroma"></div>
+        <div class="aroma"></div>
+        <div class="aroma"></div>
+    </div>
+    <div id="bat">
+
+    </div>
+
+    
+</body>
+</html>

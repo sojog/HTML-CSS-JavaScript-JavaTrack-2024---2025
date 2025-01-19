@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            
+            background-color: antiquewhite;
+            height: 50vh;
+
+            display: flex;
+            align-items:flex-start;
+            justify-content: center;
+            justify-content: flex-end;
+            justify-content: flex-start;
+
+            border-style: solid;
+            border-color: blue;
+            border-width: 3px;
+        }
+        .copil{
+            
+            background-color: aqua;
+            background-image: url('joker.jpg');
+            
+            background-size: contain;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            padding: 10px;
+            margin: 10px;
+            width: 20%;
+            height: 50%;
+
+            display: flex;
+            align-items:flex-end;
+            justify-content: center;
+
+            border-style:dashed;
+            border-color: blue;
+            border-width: 3px;
+         
+        }
+        .nume{
+            background-color: white;
+        }
+        #c2 {
+            background-image: url('django.jpg');
+        }
+        .copil:nth-child(4){
+            background-image: url('revenant.jpeg');
+        }
+        .copil:nth-child(1){
+            position: relative;
+            top:10px;
+        }
+        #cerc{
+            background-color: blue;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            position: absolute;
+            top:10px;
+            right:10px;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <div class="copil">
+            <div id="cerc"></div>
+            <div class="nume">Joker</div>
+        </div>
+
+        <div class="copil" id="c2">
+            <div class="nume">Django</div>
+        </div>
+
+        <div class="copil" style="background-image: url('joker2.webp');">
+            <div class="nume">Joker</div>
+        </div>
+
+        <div class="copil">
+            <div class="nume">Leonardo</div>
+        </div>
+    </main>
+    
+</body>
+</html>

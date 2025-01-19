@@ -1,0 +1,27 @@
+ol > li{
+    color:red;
+}
+
+ol div li:nth-child(odd) {
+    background-color: blueviolet;
+    padding: 30px;
+    margin: 30px;
+    border-color: black;
+    border-width: 4px;
+    border-style: solid;
+}
+
+.verde {
+    color:green;
+}
+
+li {
+    color:aliceblue;
+}
+
+
+li {
+    /* color:aquamarine !important; */
+    color:aquamarine;
+}
+

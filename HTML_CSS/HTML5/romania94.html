@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        body, main, .echipa, .linie, .jucator, .statistica{
+            display: flex;
+        }
+        main{
+            background-color: green;
+                                                         
+            background-image: url('https://www.flashscore.ro/res/_fs/build/symbols.a15cd79.svg#soccerFieldViewDark');
+            width: 80vw;
+            height: 80vh;
+        }
+        .echipa{
+            /* background-color:green; */
+            width: 50%;
+        }
+        #argentina{
+            flex-direction: row-reverse;
+        }
+        .linie{
+            /* background-color: rgba(222, 184, 135, 0.438); */
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 20%;
+        }
+        .jucator{
+            /* background-color: aqua; */
+            background-image: url('https://static.flashscore.com/res/image/data/IyKcpghR-rmkgmAdj.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: top center;
+            align-items:  flex-end;
+            justify-content:flex-end;
+  
+            flex-direction: column;
+
+            height: 80px;
+            width: 50px;
+        }
+        .jucator:nth-child(2){
+            background-image: url('https://static.flashscore.com/res/image/data/YoqLZii6-SlvXJFL8.png');
+        }
+        .nume{
+            background-color: black;
+            color:white;
+            position:relative;
+        }
+        .statistica{
+            position:absolute;
+            border-color: rgba(255, 255, 255, 0.715);
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 5px;
+            left:0px;
+            top: -20px;
+            height: 15px;
+            width: 15px;
+
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .galben{
+            height: 10px;
+            width: 10px;
+        }
+
+        /*
+       @media screen and (max-width:800px)  {
+            main{
+                background-color: black; 
+                transform: rotate(90deg);
+                height: auto;
+            }
+            .jucator{
+                transform: rotate(-90deg);
+            }
+
+       }*/
+       
+       @media screen and (max-width:800px)  {
+            main{
+                background-color: black; 
+                flex-direction: column;
+            }
+            
+            .echipa{
+                width: 100%;
+                flex-direction: column;
+            }
+            .linie{
+                flex-direction: row;
+                width: 100%;
+            }
+            #argentina{
+                flex-direction: column-reverse; 
+           
+       }
+    </style>
+</head>
+
+<body>
+
+
+    <main>
+
+        <div class="echipa" id="romania">
+
+            <div class="linie">
+                <div class="jucator">
+                    <p class="nume">1.Prunea</p>
+                </div>
+            </div>
+            <div class="linie">
+                <div class="jucator">
+                    <p class="nume">1.Prunea</p>
+                </div>
+                <div class="jucator">
+                    <p class="nume">1.Prunea</p>
+                </div>
+                <div class="jucator">
+                    <p class="nume">1.Prunea</p>
+                </div>
+            </div>
+            <div class="linie">
+                <div class="jucator">
+                    <p class="nume">1.Prunea</p>
+                </div>
+                <div class="jucator">
+                    <p class="nume">1.Prunea</p>
+                </div>
+                <div class="jucator" style="background-image: url('https://static.flashscore.com/res/image/data/hfbYlk1S-bD0R8zeH.png');">
+                    <div class="nume">
+                        <div class="statistica">
+                            <svg class="galben" data-testid="wcl-icon-incidents-yellow-card" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5.97 0 3.5 2.47v15.06L5.97 20h8.16l2.47-2.47V2.47L14.13 0H5.97Z" fill="#ffcd00"></path></svg>
+                        </div>
+                        6.Popescu
+                    </div>
+                </div>
+                <div class="jucator">
+                    <p class="nume">1.Prunea</p>
+                </div>
+            </div>
+            <div class="linie">
+                <div class="jucator">
+                    <p class="nume">1.Prunea</p>
+                </div>
+                <div class="jucator">
+                    <p class="nume">1.Prunea</p>
+                </div>
+            </div>
+            <div class="linie">
+                <div class="jucator">
+                    <p class="nume">1.Prunea</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="echipa" id="argentina">
+
+            <div class="linie">
+                <div class="jucator">
+                    <p class="nume">1.Prunea</p>
+                </div>
+            </div>
+            <div class="linie">
+                <div class="jucator">
+                    <p class="nume">1.Prunea</p>
+                </div>
+                <div class="jucator">
+                    <p class="nume">1.Prunea</p>
+                </div>
+                <div class="jucator">
+                    <p class="nume">1.Prunea</p>
+                </div>
+                <div class="jucator">
+                    <p class="nume">1.Prunea</p>
+                </div>
+            </div>
+            <div class="linie">
+                <div class="jucator">
+                    <p class="nume">1.Prunea</p>
+                </div>
+                <div class="jucator">
+                    <p class="nume">1.Prunea</p>
+                </div>
+                <div class="jucator" style="background-image: url('https://static.flashscore.com/res/image/data/hfbYlk1S-bD0R8zeH.png');">
+                    <div class="nume">
+                        <div class="statistica">
+                            <svg class="galben" data-testid="wcl-icon-incidents-yellow-card" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5.97 0 3.5 2.47v15.06L5.97 20h8.16l2.47-2.47V2.47L14.13 0H5.97Z" fill="#ffcd00"></path></svg>
+                        </div>
+                        6.Popescu
+                    </div>
+                </div>
+                <div class="jucator">
+                    <p class="nume">1.Prunea</p>
+                </div>
+            </div>
+            <div class="linie">
+                <div class="jucator">
+                    <p class="nume">1.Prunea</p>
+                </div>
+                <div class="jucator">
+                    <p class="nume">1.Prunea</p>
+                </div>
+            </div>
+ 
+        </div>
+    </main>
+    
+</body>
+</html>

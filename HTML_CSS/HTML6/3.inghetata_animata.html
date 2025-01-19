@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        #inghetata{
+            height: 50%;
+            width: 200px;
+            border-top-left-radius:100px;
+            border-top-right-radius:100px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            overflow: hidden;   
+            background-color: aqua;
+           
+        }
+        #bat {
+            height: 25%;
+            width: 40px;
+            background-color: saddlebrown;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        
+        @keyframes marian {
+
+            from {
+                background-color:blue;
+            }
+            to {
+                background-color: red;
+            }
+
+        }
+        @keyframes axinte {
+            
+            0% {
+                background-color:blue;
+            }
+            50% {
+                background-color: red;
+            }
+
+            100% {
+                background-color:blue;
+            }
+        }
+
+        .aroma{
+            height: 25%;
+            width: 200%;
+            background-color: chocolate;
+            transform: translate(-70px, 0px) rotate(10deg) ; 
+            animation-name: axinte;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        /* .aroma:nth-child(2){
+            background-color:bisque;
+        }
+        .aroma:nth-child(3){
+            background-color: lime;
+        }
+        .aroma:nth-child(4){
+            background-color: orangered;
+        }
+        .aroma:nth-child(4):hover{
+            background-color:#60E0C7;
+        } */
+        .aroma:hover{
+            background-color: transparent;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="inghetata">
+        <div class="aroma"></div>
+        <div class="aroma"></div>
+        <div class="aroma"></div>
+        <div class="aroma"></div>
+    </div>
+    <div id="bat">
+
+    </div>
+    <audio controls>
+        <source src="siren.mp3" type="audio/mp3">
+        
+      </audio>
+
+    
+</body>
+</html>

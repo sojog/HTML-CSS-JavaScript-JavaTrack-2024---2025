@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: aqua;
+            padding: 10px;
+            margin: 10px;
+        }
+        div:nth-child(2){
+            transform: rotate(90deg);
+            background-color: crimson;
+        }
+        div:nth-child(3){
+            transform: scale(0.75);
+            background-color: cadetblue;
+        }
+        div:nth-child(5){
+            transform: translate(20px, 10px);
+            background-color: chocolate;
+        }
+        div:nth-child(6):hover{
+            transform: scaleX(1.1);
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div>Div 1 </div>
+    <div>Div 2</div>
+    <div>Div 3</div>
+    <div>Div 4</div>
+    <div>Div 5</div>
+    <div>Div 6</div>
+    
+</body>
+</html>

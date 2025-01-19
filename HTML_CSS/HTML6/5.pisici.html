@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+
+    <style>     
+        *{
+            font-family: 'Roboto';
+        }    
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #container{
+            display: flex;
+            align-items:center;
+            justify-content: space-evenly;
+            /* background-color: aqua; */
+            height: 80%;
+            width: 80%;
+        }
+        .pisica{
+            background-color: blueviolet;
+            height: 80%;
+            width: 20%;
+            margin: 10px;
+            transition-duration: 1s;
+            border-radius: 100px;
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            align-items:flex-end;
+            justify-content: flex-start;
+        }
+        .nume{
+            margin-left: 40px;
+            margin-bottom: 30px;
+            color:transparent;
+           
+        }
+
+        .pisica:hover{
+            width: 50%;
+            /* transform: scale(1.1); */
+            transition-duration: 1s;
+        }
+        .pisica:hover .nume{
+            color:white;
+            transition-delay: 0.2s;
+            transition-duration: 0.5s;
+        }
+
+        .pisica:nth-child(1){
+            background-image: url('https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_1280.jpg');
+        }
+        .pisica:nth-child(2){
+            background-image: url('https://cdn.pixabay.com/photo/2015/11/16/14/43/cat-1045782_1280.jpg');
+        }
+
+        .pisica:nth-child(3){
+            background-image: url('https://cdn.pixabay.com/photo/2024/01/29/20/40/cat-8540772_1280.jpg');
+        }
+        .pisica:nth-child(4){
+            background-image: url('https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_1280.jpg');
+        }
+        .pisica:nth-child(5){
+            background-image: url('https://cdn.pixabay.com/photo/2016/11/22/19/02/cat-1850056_1280.jpg');
+        }
+       
+      
+
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <div class="pisica">
+            <div class="nume">Pufarina</div>
+        </div>
+        <div class="pisica">
+            <div class="nume">Pupic</div>
+        </div>
+        <div class="pisica">
+            <div class="nume">Rino</div>
+        </div>
+        <div class="pisica">
+            <div class="nume">Xena</div>
+        </div>
+        <div class="pisica">
+            <div class="nume">Tom</div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

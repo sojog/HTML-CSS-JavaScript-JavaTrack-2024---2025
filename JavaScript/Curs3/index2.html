@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lista pentru ski</h1>
+    
+    <button onclick="schimbaSezonul()" id="schimbator">Plaja</button>
+
+
+    <ol>
+
+    </ol>
+
+    <script>
+
+        var este_iarna = true
+        var button_schimbator = document.getElementById("schimbator")
+        var titlu = document.getElementsByTagName("h1")[0]
+
+
+        var toate_componentele = [
+            ["prospop", "costum de baie", "ochelari", "crema", "umbrela", "cardurriri"],
+        
+            ["ochelari", "caciula", "pantaloni", "ghete", "casca", "manusi", "geaca", "fular", "clapari", "schiuri"]
+        ]
+        
+        var ol_elem = document.getElementsByTagName("ol")[0]
+
+        function schimbaSezonul() {
+            
+            if (este_iarna == true) {
+                este_iarna = false
+
+                button_schimbator.innerHTML = "Ski"
+                titlu.innerHTML = "Lista pentru plaja"
+                var componente = toate_componentele[0]
+
+            } else {
+                este_iarna = true
+
+                button_schimbator.innerHTML = "Plaja"
+                titlu.innerHTML = "Lista pentru ski"
+                var componente = toate_componentele[1]
+            }
+            console.log("este_iarna:", este_iarna)
+
+         
+            ol_elem.innerHTML = ""
+            
+            for (let i = 0; i < componente.length; i++) {
+                    
+                    var new_li = document.createElement("li")
+                    new_li.innerHTML = componente[i]
+                    ol_elem.appendChild(new_li)
+            }
+        }
+        // chemarea functiei
+        schimbaSezonul()
+
+
+
+
+
+    </script>
+
+</body>
+</html>

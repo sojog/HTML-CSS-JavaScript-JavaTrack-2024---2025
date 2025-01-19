@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightcyan;
+        }
+    </style>
+</head>
+<body>
+    <h1> Site-ul meu frumos </h1>
+    <button onclick=" schimbaBackground() "> Schimba </button>
+    
+    <script>
+
+        var isDarkTheme = false;
+
+        // declaratie a unei functii
+        function schimbaBackground () {
+            var raspuns = document.getElementsByTagName("body");
+            var body = raspuns[0];
+
+            var h1 = document.getElementsByTagName("h1")[0];
+
+            if (isDarkTheme == false ) {
+                body.style.backgroundColor = "lightcyan";  
+                h1.style.color = "black";
+                
+            } else {
+                body.style.backgroundColor = "darkslateblue";
+                h1.style.color = "white";
+               
+            }
+            isDarkTheme = !isDarkTheme
+              
+        }
+
+        // chemarea functiei
+        
+
+      
+
+    </script>
+</body>
+</html>

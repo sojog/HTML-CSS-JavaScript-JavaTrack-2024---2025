@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TODO list</h1>
+
+    <ul class="lista">
+        <li>1</li>
+        
+    </ul>
+    <button onclick=" adaugaListItem() ">Adauga un list item</button>
+    
+    <script>
+
+        var contor = 2;
+
+        function adaugaListItem() {
+            
+            var ul = document.getElementsByClassName("lista")[0]
+
+            var newLI = document.createElement("li")
+            newLI.innerHTML = contor
+            contor++ /* Echivalent cu contor += 1 */
+
+            ul.appendChild(newLI)
+
+
+        }
+
+    </script>
+
+</body>
+</html>

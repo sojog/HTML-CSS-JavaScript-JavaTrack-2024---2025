@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div style="font-size:2em; font-weight:bold;">hello</div> 
+    <div style="font-size:1.5em; font-weight:bold;">welcome</div> 
+    <div>how_are_you</div> 
+    
+    <script>
+    
+    
+    var language = 'en'; 
+
+    var locales = { 
+        'en':{ 
+            hello:"Hello", 
+            welcome:"Welcome to our page", 
+            how_are_you:"How are you today?" 
+        }, 
+        'ro':{    
+            hello:"Bună ziua",  
+            welcome:"Bine aţi venit pe pagina noastră", 
+            how_are_you:"Ce mai faceţi astăzi" 
+        } 
+    }
+
+    var div_array = document.getElementsByTagName("div")
+    
+    // div_array[0].innerHTML = locales[language]['hello']
+    // div_array[1].innerHTML = locales[language]['welcome']
+    // div_array[2].innerHTML = locales[language]['how_are_you']
+
+
+    for (let i = 0; i < div_array.length; i++) {
+        valoare_anterioara = div_array[i].innerHTML
+        div_array[i].innerHTML = locales[language][valoare_anterioara]
+        
+    }
+
+
+</script>
+    
+</body>
+</html>

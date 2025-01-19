@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lista pentru ski</h1>
+   
+    <ol>
+
+    </ol>
+
+    <script>
+        var componente  = ["ochelari", "caciula", "pantaloni", "ghete", "casca", "manusi", "geaca", "fular", "clapari", "schiuri"]
+        
+
+        var ol_elem = document.getElementsByTagName("ol")[0]
+
+
+
+        for (let i = 4; i < 8; i++) {
+           console.log("i=", i)
+            
+        }
+
+        for (let i = 0; i < componente.length; i++) {
+                    
+            var new_li = document.createElement("li")
+            new_li.innerHTML = componente[i]
+            ol_elem.appendChild(new_li)
+        }
+        
+
+
+    </script>
+
+</body>
+</html>

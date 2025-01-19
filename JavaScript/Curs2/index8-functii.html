@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="todoitem" id="" placeholder="Introduceti.." >  
+    <button onclick=" adaugaListItem(input.value) ">Adauga</button>
+   
+    <ol>
+
+    </ol>
+    <script>
+        var input = document.getElementsByName("todoitem")[0]
+        
+        function adaugaListItem(valoareInserata) { 
+
+                if (valoareInserata != ""){
+                    var ol = document.getElementsByTagName("ol")[0]
+                    var newLI = document.createElement("li")
+
+                    newLI.innerHTML = valoareInserata
+
+                    ol.appendChild(newLI)
+            
+                } else{
+                    alert("Trebuie sa inserati in text")
+                }
+
+            }
+
+
+
+    </script>
+
+</body>
+</html>
